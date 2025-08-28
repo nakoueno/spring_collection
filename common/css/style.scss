@@ -85,10 +85,11 @@ img {
 }
 
 h1 {
-	font-size: 80px;
-	color: var(--gray);
 	text-align: center;
 	margin-top: vw-pc(50);
+	img {
+		width: vw-pc(800);
+	}
 }
 
 .main-text {
@@ -134,14 +135,16 @@ h1 {
 
 	/* ヘッダータイトル */
 	h1 {
-		font-size: 40px;
-		margin-top: 20px; /* 必要に応じて調整 */
+		margin-top: vw(30);
+		img {
+			width: vw(267);
+			height: auto;
+		}
 	}
-	/* ヘッダーテキスト */
 	.main-text {
 		font-size: 14px;
 		line-height: 2.071;
-		margin: vw(15) 0 vw(100);
+		margin: vw(40) 0 vw(150);
 	}
 }
 
@@ -237,7 +240,7 @@ h1 {
 	}
 	&-name01 {
 		position: absolute;
-		top: vw-pc(20);
+		top: vw-pc(50);
 		right: 0;
 		img {
 		width: vw-pc(600);
@@ -246,18 +249,18 @@ h1 {
 	}
 	&-name02 {
 		position: absolute;
-		top: vw-pc(20);
+		top: vw-pc(52);
 		img {
-		width: vw-pc(545);
+		width: vw-pc(523);
 		height: auto;
 		}
 	}
 	&-name03 {
 		position: absolute;
-		top: vw-pc(20);
+		top: vw-pc(53);
 		right: 0;
 		img {
-		width: vw-pc(651);
+		width: vw-pc(585);
 		height: auto;
 		}
 	}
@@ -309,32 +312,40 @@ h1 {
 		padding-top: vw(70);
 		&-nmb01, &-nmb03 {
 			position: absolute;
-			top: vw(30);
+			top: vw(27);
 			img {
-			width: vw(65);
+			width: vw(60);
 			height: auto;
 			}
 		}
 		&-nmb02 {
 			position: absolute;
-			top: vw(30);
+			top: vw(29);
 			right: 0;
 			img {
-			width: vw(65);
+			width: vw(60);
+			height: auto;
+			}
+		}
+		&-nmb03 {
+			position: absolute;
+			top: vw(29);
+			img {
+			width: vw(60);
 			height: auto;
 			}
 		}
 		&-name01 {
 			position: absolute;
-			top: vw(43);
+			top: vw(52);
 			img {
-			width: vw(200);
+			width: vw(210);
 			height: auto;
 			}
 		}
 		&-name02 {
 			position: absolute;
-			top: vw(43);
+			top: vw(53);
 			img {
 			width: vw(180);
 			height: auto;
@@ -342,9 +353,9 @@ h1 {
 		}
 		&-name03 {
 			position: absolute;
-			top: vw(43);
+			top: vw(53);
 			img {
-			width: vw(215);
+			width: vw(205);
 			height: auto;
 			}
 		}
@@ -387,7 +398,7 @@ h1 {
 .footer {
 	padding: vw(15) 0;
 	background-color: var(--gray);
-	@include footer();
+	// @include footer();
 	&__copyright {
 		text-align: center;
 		color: #fff;
